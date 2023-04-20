@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+
+
+*{margin: 0;
+    padding: 0;}
+
+ul,ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+
+
+/* 레이아웃설정 */
+/* 높이값 설정은 내부에 자료를 삽입하기 시작하면 */
+.boxA {height: 200px;}
+.boxB {height: 800px;}
+/* .boxC {height: 1200px;} */
+.boxD {height: 300px;}
+
+/* 값을 정해놓은 경우 추후 삭제해야하므로 상단에 같이 배치함 */
+
+/* 헤더설정 */
+.boxA {display: flex;}
+
+.box1 {
+    width: 20%;
+    height: 100%;}
+.box2 {
+    width: 80%;
+    height: 100%;}
+
+/* 히어로설정 */
+.box3 {
+    height: 100%;
+    width: 60%;
+    margin: auto;}
+
+/* 컨텐츠 설정 */
+.box4 {height: 20%;}
+.box5 {height: 60%;}
+.box6 {height: 20%;}
+
+
+/* 와이어프레임작업 */
+
+
+/* 헤더 추가설정 */
+.gnb {
+    position: relative;
+    display: flex;
+    align-items: flex-end;}
+.util {
+    width: 300px;
+    height: 80px;
+    background-color: beige;
+    position: absolute;
+    right: 0;
+    top: 0;}
+
+.menu {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;}
+
+/* hero 추가설정 */
+
+.slogon {position: relative;}
+.txtbox {
+    width: 100%;
+    height: 400px;
+    background-color: cornflowerblue;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -200px;}
+
+.slidebtn {
+    width: 150px;  
+    height: 50px;
+    background-color: darkblue;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -75px;}
+
+    /* 컨텐츠 추가설정 */
+.info_up {
+    display: flex;
+    justify-content: space-between;}
+.info_img {
+    width: 20%;
+    height: 200px;
+background-color: aqua;}
+.info_txt {
+    width: 75%;
+    height: 200px;
+background-color: blue;}
+
+.gallery { 
+    height: 300px;
+    background-color: blueviolet;}
+.notice {
+    height: 150px;
+    background-color: darkorchid;}
+.res {
+    height: 450px;
+    background-color: orange;
+}
+
+
+
+.info_bottom {
+    display: flex;
+    height: 300px;}
+
+.map {
+    background-color: darkgreen;
+    width: 70%;
+    height: 100%;}
+
+.map_info {
+    background-color: yellowgreen;
+    width: 30%;
+    height: 100%;}
+
+
