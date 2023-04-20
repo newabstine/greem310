@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃연습3</title>
+</head>
+<link rel="stylesheet" href="css/grid-guide.css">
+
+<body>
+
+<!-- <div class="boxH">header</div>
+<div class="boxN">nav</div>
+
+<div class="boxS">
+    <div class="box001">section</div>
+    <div class="box002">article</div>
+    <div class="box003">aside</div>
+</div>
+
+<div class="boxB">footer</div> -->
+
+<div class="boxa">header</div>
+<div class="boxb">nav</div>
+<div class="boxc">
+    <div class="box1">
+        <div class="box1-1">section</div>
+        <div class="box1-2">article</div>
+    </div>
+    <div class="box2">aside</div>
+</div>
+<div class="boxd">footer</div>
+
+
+<style>
+/* boxc 설정 */
+/* 부모에 after 정렬 float:left */
+
+/* .boxc::after {
+    content: "";
+    display: block;
+    clear: both;}
+
+.box1 {float: left;
+width: 70%;}
+.box2 {float: left;
+width: 30%;} */
+
+/* flex 설정 */
+
+.boxc {display: flex;
+    align-items: flex-start;}
+.box1 {width: 70%;}
+.box2 {width: 30%;}
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
