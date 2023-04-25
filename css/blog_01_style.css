@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* 전체설정 */
+
+*{margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+
+body {font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;}
+
+/* 로고설정 */
+
+.boxA {
+    padding-top: 8px;
+    padding-bottom: 8px;}
+.boxA h1 {font-weight: bold;
+    font-size: 30px;}
+
+    
+/* 메뉴설정 */
+
+.menu ul {display: flex;}
+.menu ul li a {
+    display: block;
+    padding: 15px;
+    font-size: 14px;}
+.menu ul li a:hover {background-color: #75dbe7;}
+.boxB {background-color: #7cbac1;}
+
+
+/* 박스C, 박스D 가로설정 */
+
+.boxC {display: flex;}
+.box1 {width: 70%;}
+.box2 {width: 30%;}
+
+/* 기사설정 */
+
+.box1 {
+    padding-top: 40px;
+    padding-bottom: 30px;}
+.story h1 {
+    font-size: 36px;
+    margin-bottom: 20px;}
+.story img {max-width: 100%;}
+.story h2 {
+    margin-top: 40px;
+    font-weight: normal;
+    border-left: 10px solid #7cbac1;
+    padding-left: 10px;}
+.story p { 
+    margin-top: 10px;
+    margin-bottom: 20px;}
+
+
+/* 특집기사설정 */
+
+.box2 {
+    padding-top: 40px;
+    padding-bottom: 30px;}
+.sidemenu {margin-bottom: 30px;}
+.sidemenu h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.sidemenu ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;}
+
+
+/* 추천기사 설정 */
+
+.recommend {margin-bottom: 30px;}
+.recommend h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.recommend ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;}
+
+
+/* 인기기사 설정 */
+
+.popular {margin-bottom: 30px;}
+.popular h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    border-bottom: dotted 2px #ddd;
+    margin-bottom: 10px;}
+.popular ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;}
+
+
+/* 카피라이트 */
+
+.copyright {
+    font-size: 14px;
+    color: #666;}
+
+
+/* 카피라이트 라인바 */
+
+.boxD {border-top: 1px solid #666;}
+
+
+/* 박스 좌우 간격설정 */
+
+.box1 {
+    padding-right: 50px;
+    box-sizing: border-box;}
+
+
+/* 상하 여백설정 */
+
+.box2 {padding-top: 100px;}
+.copyright {padding-top: 10px;}
+
+
+/* 화면 설정 및 센터 배치 */
+
+.boxA , .menu , .boxC, .copyright {
+    width: 1000px;
+    margin: 0 auto;}
