@@ -17,6 +17,12 @@ a {
     text-decoration: none;
     color: #000;
 }
+img {
+    border: none;
+    vertical-align: bottom;
+}
+
+
 
 body {
     font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
@@ -131,6 +137,52 @@ body {
     border-radius: 2px;
 }
 
+/* sns공유설정 */
+
+.snsSet {margin-top: 40px;}
+.snsSet ul {display: flex;}
+.snsSet ul li {width: 33.3333%;}
+.snsSet ul li a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    color: #fff;}
+
+.snsSet li:nth-child(1) a {background-color: #1da1f2;}
+.snsSet li:nth-child(2) a {background-color: #1877f2;}
+.snsSet li:nth-child(3) a {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,f77737+100 */
+    background: #833ab4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #833ab4 0%, #f77737 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #833ab4 0%,#f77737 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #833ab4 0%,#f77737 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#f77737',GradientType=1 ); /* IE6-9 */
+    }
+
+/* 관련기사 */
+.ralation {
+    background-color: #f0f0d4;
+    padding: 20px;
+    margin-top: 40px;
+}
+.ralation h1 {
+    color: #727224;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.ralation ul {display: flex;
+            flex-wrap: wrap;}
+.ralation ul li {width: 25%;}
+.ralation ul li a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+.ralation img {max-width : 100%;}
+.ralation .txt {}
+
+
 
 
 
@@ -227,8 +279,33 @@ body {
     display: block;
     padding: 5px;
     font-size: 14px;
+    border-bottom: dotted 1px #ddd;
+    color: #2288dd;
+
 }
 
+.popular a::after {
+    content: "";
+    display: block;
+    clear: both;}
+.popular img {
+    border: none;
+    float: left;
+    width: 60px;
+}
+
+.popular .txt {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+    padding-left: 15px;
+}
+
+.popular span {
+    color: #666;
+    font-size: 12px;
+    display: block;
+}
 
 /* 카피라이트 */
 

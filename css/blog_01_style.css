@@ -9,6 +9,8 @@ a {text-decoration: none;
     color: #000;}
 
 body {font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;}
+img {border: none;
+    vertical-align: bottom;}
 
 /* 로고설정 */
 
@@ -82,6 +84,52 @@ body {font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;}
     margin-bottom: 20px;}
 
 
+/* sns 설정 */
+.snsSet {}
+.snsSet ul {display: flex;}
+.snsSet li {width: 33.3333%;}
+.snsSet li:nth-child(1) a {background-color: #1da1f2;}
+.snsSet li:nth-child(2) a {background-color: #1877f2;}
+.snsSet li:nth-child(3) a  {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#833ab4+0,f77737+100 */
+    background: #833ab4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #833ab4 0%, #f77737 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #833ab4 0%,#f77737 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #833ab4 0%,#f77737 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#833ab4', endColorstr='#f77737',GradientType=1 ); /* IE6-9 */
+    }
+
+.snsSet a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* 관련기사설정 */
+.ralation {
+    background-color: #f0f0d4;
+}
+.ralation h1 {
+    color: #727224;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 5px;}
+.ralation ul {display: flex;}
+.ralation li {}
+.ralation a {}
+.ralation img {}
+.ralation .txt {}
+
+
+
+
+
+
+
+
+
+
 /* 특집기사설정 */
 
 .box2 {
@@ -113,11 +161,30 @@ body {font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;}
     color: #666;
     border-bottom: dotted 2px #ddd;
     margin-bottom: 10px;}
+
+.recommend li {margin-bottom: 10px;}
+
 .recommend ul li a {
     display: block;
-    padding: 5px;
-    font-size: 14px;}
+    font-size: 14px;
+    position: relative;}
+    
 
+
+.recommend img {
+    width: 100%;
+    vertical-align: top;
+}
+.recommend .txt {
+    background-color: rgba(0, 0 , 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+} 
 
 /* 인기기사 설정 */
 
@@ -131,7 +198,28 @@ body {font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;}
 .popular ul li a {
     display: block;
     padding: 5px;
-    font-size: 14px;}
+    font-size: 14px;
+border-bottom: dotted 1px #ddd;}
+.popular a::after {
+    content: "";
+    display: block;
+    clear: both;}
+
+.popular img {
+    border: none;
+    float: left;
+    width: 60px;}
+.popular .txt {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+    padding-left: 15px;}
+.popular span {
+    color: #666;
+    font-size: 12px;
+    display: block;
+}
+
 
 
 /* 카피라이트 */
