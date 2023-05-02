@@ -48,11 +48,6 @@ img {border: none;
 
 
 
-/* 박스C, 박스D 가로설정 */
-
-.boxC {display: flex;}
-.box1 {width: 70%;}
-.box2 {width: 30%;}
 
 /* 기사설정 */
 
@@ -115,10 +110,15 @@ img {border: none;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 5px;}
-.ralation ul {display: flex;}
-.ralation li {}
-.ralation a {}
-.ralation img {}
+.ralation ul {display: flex;
+                flex-wrap: wrap;}
+.ralation li {width: 25%;}
+.ralation a {
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+.ralation img {max-width: 100%;}
 .ralation .txt {}
 
 
@@ -234,11 +234,7 @@ border-bottom: dotted 1px #ddd;}
 .boxD {border-top: 1px solid #666;}
 
 
-/* 박스 좌우 간격설정 */
 
-.box1 {
-    padding-right: 50px;
-    box-sizing: border-box;}
 
 
 /* 상하 여백설정 */
@@ -247,8 +243,74 @@ border-bottom: dotted 1px #ddd;}
 .copyright {padding-top: 10px;}
 
 
+
+
+
+
+
+
+
+
+
+/* 박스의 여백 확보 */
+.boxA, .boxC, .copyright {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+/* ////////////미디어쿼리 구간설정 //////////// */
+
+/* 1번 모바일 599px 이하 ////////////*/
+@media (min-width:599px) {
+/* css설정 */
+
+}
+
+
+/* 2번 태블릿 이하 구간 600-767px 구간 /////////////////*/
+
+@media (min-width:600px) and (max-width:767px) {
+/* css 설정 */
+/* 박스 2-1,박스2-2 설정 */
+.box2 {display: flex;}
+.box2-1 {width: 50%;}
+.box2-2 {width: 50%;}
+}
+
+/* 3번 태블릿이상 ~ 데스크탑구간 768px 이상/////////////  */
+@media (min-width:768px) {
+/* css 설정구간 */
+
+/* 박스C, 박스D 가로설정 */
+
+.boxC {display: flex;}
+.box1 {width: 70%;}
+.box2 {width: 30%;}
+
+/* 박스 좌우 간격설정 */
+
+.box1 {
+    padding-right: 50px;
+    box-sizing: border-box;}
+
+}
+
+/* 4번 구간 일정크기 가로값 변동 없는 구간 1040px 이상////////////////// */
+
+@media (min-width:1040px) {
+
+
 /* 화면 설정 및 센터 배치 */
 
 .boxA , .menu , .boxC, .copyright {
     width: 1000px;
     margin: 0 auto;}
+
+
+}
+
+
+
