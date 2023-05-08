@@ -104,12 +104,15 @@ img {border: none;
 /* 관련기사설정 */
 .ralation {
     background-color: #f0f0d4;
-}
+    padding: 20px;
+    margin-top: 40px;}
+
 .ralation h1 {
     color: #727224;
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 5px;}
+
 .ralation ul {display: flex;
                 flex-wrap: wrap;}
 .ralation li {width: 25%;}
@@ -118,7 +121,8 @@ img {border: none;
     padding: 5px;
     font-size: 14px;
 }
-.ralation img {max-width: 100%;}
+/* max-width 에서 width 100% 로 변경됨 */
+.ralation img {width: 100%;}
 .ralation .txt {}
 
 
@@ -264,8 +268,20 @@ border-bottom: dotted 1px #ddd;}
 /* ////////////미디어쿼리 구간설정 //////////// */
 
 /* 1번 모바일 599px 이하 ////////////*/
-@media (min-width:599px) {
+@media (max-width:599px) {
 /* css설정 */
+
+/* snsSet 설정 */
+.snsSet span {
+    text-indent: -9999px;
+    display: inline-block;
+}
+/* 관련기사 설정 */
+
+.ralation ul li {
+    width: 50%;
+}
+
 
 }
 

@@ -76,3 +76,316 @@ article:nth-child(12) {
     background-color: #222;}
 
 
+
+/* 미디어쿼리 구간 설정//////////////////////////////////////////////// */
+/* 1번구간 */
+
+/* 2번구간 480px-639px */
+
+@media (min-width:480px) and (max-width:639px) {
+    header {
+        position: relative;
+        width: 100%;
+        height: 130px;
+    
+    }
+    nav {
+        display: none;
+        width: 100%;
+        margin-left: 0;}
+
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+
+
+    article {
+        float: left;
+        width: 50%;
+        height: 150px;}
+    
+    /* 아티클 박스 크기 각자 지정 */
+    
+    article:nth-child(1) {
+        background-color: #ddd;
+        width: 100%;
+        height: 300px;}
+    article:nth-child(2) {
+        background-color: #ccc;
+        width: 100%;}
+    article:nth-child(3) {
+        display: none;
+        background-color: #bbb;}
+    article:nth-child(4) {
+        display: none;
+        background-color: #aaa;}
+    article:nth-child(5) {
+        background-color: #999;
+        width: 50%;}
+    article:nth-child(6) {
+        background-color: #888;
+        width: 50%;}
+    article:nth-child(7) {
+        display: none;
+        background-color: #777;
+        width: 50%;}
+    article:nth-child(8) {
+        background-color: #666;}
+    article:nth-child(9) {
+        background-color: #555;
+        width: 50%;}
+    article:nth-child(10) {
+        display: none;
+        background-color: #444;
+        width: 50%;}
+    article:nth-child(11) {
+        background-color: #333;}
+    article:nth-child(12) {
+        background-color: #222;}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 3번구간 640px-779px 구간 */
+@media (min-width:640px) and (max-width:779px) {
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 80px;
+    
+    }
+    nav {
+        width: 100%;
+        margin-left: 0;}
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    
+    
+
+    article {
+        float: left;
+        width: 50%;
+        height: 150px;}
+    
+    /* 아티클 박스 크기 각자 지정 */
+    
+    article:nth-child(1) {
+        background-color: #ddd;
+        width: 100%;
+        height: 300px;}
+    article:nth-child(2) {
+        background-color: #ccc;
+        width: 100%;}
+    article:nth-child(3) {
+        display: none;
+        background-color: #bbb;}
+    article:nth-child(4) {
+        display: none;
+        background-color: #aaa;}
+    article:nth-child(5) {
+        background-color: #999;
+        width: 50%;}
+    article:nth-child(6) {
+        background-color: #888;
+        width: 50%;}
+    article:nth-child(7) {
+        display: none;
+        background-color: #777;
+        width: 50%;}
+    article:nth-child(8) {
+        background-color: #666;}
+    article:nth-child(9) {
+        background-color: #555;
+        width: 50%;}
+    article:nth-child(10) {
+        display: none;
+        background-color: #444;
+        width: 50%;}
+    article:nth-child(11) {
+        background-color: #333;}
+    article:nth-child(12) {
+        background-color: #222;}
+
+}
+
+
+
+
+/* 4번구간 780-1023px 구간*/
+
+@media (min-width:780px) and (max-width:1023px) {
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 80px;
+    
+    }
+    nav {
+        width: 100%;
+        margin-left: 0;}
+    section {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    
+    
+    
+    
+    article {
+        float: left;
+        width: 33.3333%;
+        height: 260px;}
+    
+    /* 아티클 박스 크기 각자 지정 */
+    
+    article:nth-child(1) {
+        background-color: #ddd;
+        width: 100%;
+        height: 400px;}
+    article:nth-child(2) {
+        background-color: #ccc;
+        width: 66.6666%;}
+    article:nth-child(3) {
+        background-color: #bbb;}
+    article:nth-child(4) {
+        display: none;
+        background-color: #aaa;}
+    article:nth-child(5) {
+        background-color: #999;
+        width: 33.3333%;}
+    article:nth-child(6) {
+        background-color: #888;
+        width: 66.6666%;}
+    article:nth-child(7) {
+        display: none;
+        background-color: #777;
+        width: 50%;}
+    article:nth-child(8) {
+        background-color: #666;}
+    article:nth-child(9) {
+        background-color: #555;
+        width: 33.3333%;}
+    article:nth-child(10) {
+        display: none;
+        background-color: #444;
+        width: 50%;}
+    article:nth-child(11) {
+        background-color: #333;}
+    article:nth-child(12) {
+        display: none;
+        background-color: #222;}
+
+
+}
+
+
+
+/* 5번구간 1024-1279까지 */
+
+@media (min-width:1024px) and (max-width:1279px) {
+
+/* 포지션 - 픽스드에서 릴레티브로(보통) 변경  */
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+}
+nav {
+    width: 100%;
+    margin-left: 0;}
+section {
+    width: 100%;
+    margin-left: 0;
+}
+
+
+
+
+
+article {
+    float: left;
+    width: 25%;
+    height: 260px;}
+
+/* 아티클 박스 크기 각자 지정 */
+
+article:nth-child(1) {
+    background-color: #ddd;
+    width: 75%;
+    height: 520px;}
+article:nth-child(2) {
+    background-color: #ccc;
+    width: 25%;}
+article:nth-child(3) {
+    background-color: #bbb;}
+article:nth-child(4) {
+    background-color: #aaa;}
+article:nth-child(5) {
+    background-color: #999;}
+article:nth-child(6) {
+    background-color: #888;
+    width: 50%;}
+article:nth-child(7) {
+    background-color: #777;
+    width: 50%;}
+article:nth-child(8) {
+    background-color: #666;}
+article:nth-child(9) {
+    background-color: #555;
+    width: 25%;}
+article:nth-child(10) {
+    background-color: #444;
+    width: 50%;}
+article:nth-child(11) {
+    background-color: #333;}
+article:nth-child(12) {
+    background-color: #222;}
+
+
+
+
+}
+
+
+
+
+
+/* 6번구간 1280-1599까지 */
+
+@media (min-width:1280px) and (max-width:1599px) {
+/* css설정구간 */
+/* 포지션 - 픽스드에서 릴레티브로(보통) 변경  */
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+
+}
+nav {
+    width: 100%;
+    margin-left: 0;}
+section {
+    width: 100%;
+    margin-left: 0;
+}
+
+
+}

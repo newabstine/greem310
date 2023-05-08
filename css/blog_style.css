@@ -160,14 +160,15 @@ body {
     margin-bottom: 5px;
 }
 .ralation ul {display: flex;
-            flex-wrap: wrap;}
+            flex-wrap: wrap;} /* 꼮 써줘야하는 것 flex-wrap: wrap; 사이즈를 정해주는 것*/
 .ralation ul li {width: 25%;}
 .ralation ul li a {
     display: block;
     padding: 5px;
     font-size: 14px;
 }
-.ralation img {max-width : 100%;}
+/* .ralation img {max-width : 100%;} 에서 변경됨 */
+.ralation img {width : 100%;}
 .ralation .txt {}
 
 
@@ -363,6 +364,29 @@ body {
 
 @media (max-width:599px) {
 /* css 설정구간 */
+
+/* snsSet 설정 */
+
+/* 1.투명하게 안보이는 방법 오피시티 opacity: 0; */
+/* 2. 박스가 보여도 그만 안 보여도 그만 display: none; 웹접근성을 생각하면 쓰지말걸  */
+/* 3. text-indent: -9999px;  /  디스플레이를 블럭을 추가해줘야 먹힘*/
+
+
+.snsSet span {
+    text-indent: -9999px;
+    display: inline-block;
+    }
+
+/* 관련기사 설정 */
+
+.ralation ul li {width: 50%;}
+
+/* 메뉴설정 */
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 10px;
+}
 
 
 }
