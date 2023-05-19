@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* 전체설정 */
+
+* {
+    margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+a {
+    text-decoration: none;
+    color: #000;}
+img {
+    border: none;
+    vertical-align: bottom;}
+
+body {font-family: '맑은고딕', 'Apple SD Gothic Neo', sans-serif;}
+
+/* 로고설정 */
+.logo {}
+.logo a {}
+.logo img {
+    width: 250px;
+    height: 33px;
+}
+.logo a:hover {}
+
+
+
+/* 메뉴설정 */
+
+.menu {}
+.menu ul {}
+.menu ul li {}
+.menu li a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.menu li a:hover {
+    background-color: #eee;
+}
+
+
+/* 헤더 그림 설정 */
+.topimg {}
+
+
+
+
+/* 공지사항 설정 */
+
+.notice {}
+.notice ul {}
+.notice ul li {}
+.notice li a {}
+.notice span {}
+.notice .txt {}
+
+/*  카피라이트 설정 */
+.copyright {}
+.copyright p {}
+
+
+
+
+
+/* 미디어 쿼리 구간///////////////////////// */
+
+
+
+
+/* 768px 이상구간 */
+
+@media (min-width:768px) {
+
+    /* 로고 와 메뉴 가로정렬 */
+
+.boxA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
