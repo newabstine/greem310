@@ -11,6 +11,10 @@ font-family: 'Play', sans-serif; */
 a {color: #000; text-decoration: none;}
 ul,ol {list-style: none;}
 img {vertical-align: bottom;}
+body {width: 100%; height: 100%; position: fixed;}
+/* 적응형웹입음 알리는 방식과 같다. */
+
+
 
 /* 로고작업 */
 h1 {
@@ -37,13 +41,13 @@ h1 img {
 
 /* header설정 */
 header {
-    background-color: #b9fb05; 
+    background: linear-gradient(-40deg, #e6fc55, #b9fb05, #97e031);
     position: fixed;
     width: 700px;
     height: 100%;
     z-index: 8;
     transform: skewX(-40deg);
-    left: -420px;
+    left: -470px;
 }
 header .gnb {
     position: absolute;
@@ -103,15 +107,47 @@ header .gnb ul a {
     margin-bottom: 3px;
 }
 
+/* hero 텍스트 설정 */
+section {
+    position: fixed; right: 100px; top: 30%; z-index: 10; 
+    width: 340px; height: 280px;}
+
+section p:nth-child(1) {
+    font-family: 'Monoton', cursive;
+    font-size: 160px;
+    color: #b9fb05;
+
+}
+section p:nth-child(1) em {
+    font-size: 50px;
+    font-family: 'Play', sans-serif;
+    color: #fff;
+}
+section p:nth-child(2) {
+    font-size: 34px;
+    font-family: 'Play', sans-serif;
+    color: #bbb;
+    letter-spacing: -2px;
+    margin-top: -40px;
+}
+section p:nth-child(2) b {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #b9fb05;
+}
 
 
+/* snsSet 설정 */
 
+.snsSet {
+    position: fixed; right: 40px; top: 40px; z-index: 8;
+    display: flex;}
+.snsSet li {margin-right: 20px;}
+.snsSet a {color: #b9fb05;}
+.snsSet i {font-size: 25px;}
 
-
-
-
-
-
+.snsSet a:hover i {
+    transform: scale(1.2);
+}
 
 
 /* aside 설정 */
@@ -156,24 +192,53 @@ header .gnb ul a {
 
 .side {
     width: 800px;
-    height: 100%;
     position: fixed;
     z-index: 8;
-    background-color: #b9fb05;
-    right: 0;
+    height: 100%;
+    background-color: #111;;
+    opacity: 0.5;
+    right:-800px;
     top: 0;
-    transform: skewX(-40deg)
-
+    transform: skewX(-40deg);
+    transition: all 0.5s;
 }
-.side .con {}
-.side .con p {}
-.side .con em {transform: skewX(40deg);}
-.side .con img {}
 
+.side .con {
+    position: absolute;
+    width: 400px;
+    background-color: #000;
+    height: 100%;
+    left: 150px;
+    padding: 10px;
+box-sizing: border-box;
+transition: all 0.8s;
+}
 
+.side .con p {
+    position: absolute;
+    width:300px;
+    height: 100px;
+    transition: all 1.2s;
+}
 
+.side .con p:nth-child(3) {bottom: 50px;
+    left: 200px;}
+.side .con p:nth-child(2) {bottom: 170px;
+    left: 250px;}
+.side .con p:nth-child(1) {bottom: 290px;
+    left: 300px;}
+.side .con em {
+    transform: skewX(45deg);
+    display: block;
+    color: #a0db50;
+}
+.side .con img {
+    width: 300px;
+}
 
+.side:hover {right: -500px;}
+.side:hover .con {left: 50px;}
 
-
-
-
+.side:hover p:nth-child(1) {left: 50px;}
+.side:hover p:nth-child(2) {left: 50px;}
+.side:hover p:nth-child(3) {left: 50px;}
