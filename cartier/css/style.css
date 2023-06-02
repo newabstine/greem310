@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+/* 전체설정 */
+*{margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #000;}
+img {vertical-align: bottom;}
+
+/* 배경이미지설정 */
+#wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+/* 로고 설정 */
+#wrap h1 {
+    position: fixed;
+    text-align: center;
+    left: 50px;
+    top: 240px;
+    padding: 20px;
+}
+#wrap h1 strong {
+    display: block;
+    font-size: 16px;
+    line-height: 0.2;
+    font-weight: bold;
+    font-family: Verdana;
+    color: #333;
+}
+#wrap h1 img {
+    width: 200px;
+    height: auto;
+}
+#wrap h1 span {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+    line-height: 3;
+    /* margin-top: 10px; */
+    color: #444;
+    font-family: Arial;
+    
+}
+/* 히어로영역설정 */
+.txt {
+    position: fixed;
+    top: 380px;
+    left: 70px;
+    font-size: 30px;
+    color: #111;
+    font-family: 'Raleway', sans-serif;
+}
+.txt span {
+    color: #888;
+    
+}
+
+/* section설정 */
+
+section {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* 
+플루트를 쓰면 부모자에게 가상선택자를 설정하여 
+밑에서 올라오는 것을 막아줘야하지만, 현재는 없음으로 생략한다.
+>>>에프터 정렬<<<
+*/
+article {
+    float: right;
+    width: 12%;
+    height: 100%;
+    background-image: url(../img/divider.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    overflow: hidden;
+}
+article h2 {
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #666;
+    border-left: 3px solid #555;
+    padding-left: 15px;
+    z-index: 10;
+}
+
+article video {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    transition: all 0.8s; /* display : none 의 경우 부드러운 전환이 안됨 */
+    opacity: 0;
+}
+
+/* article:hover {
+    width: 35%;
+    transition: all 0.8s;
+    제이쿼리로 구현함 중복 적용시 에러 발생
+} */
+
+/* article 내부에 타이틀 박스 설정 */
+
+article div {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: #000;
+    opacity: 0.5;
+    top: 300px;
+    transition: all 1.2s;
+    z-index: 2;
+}
+article:hover h2 {
+    color: #fff;
+    border-left: 3px solid #fff;
+}
+article:hover div {
+    top: 270px;
+    height: 80px;
+}
+
+article h3 {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 200px;
+    right: -9999px;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.8;
+    z-index: 2;
+    transition: all 1.5s;
+}
+article p {
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    bottom: 150px;
+    text-align: right;
+    right: -9999px;
+    font-family: 'Raleway', sans-serif;
+    opacity: 0.8;
+    z-index: 2;
+    transition: all 1.8s;
+}
+article:hover h3 {
+    right: 10px;
+}
+article:hover p {
+    right: 10px;
+}
+
+
+
