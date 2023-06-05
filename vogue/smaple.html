@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform_3D</title>
+</head>
+<body>
+<h1>transform_3D</h1>
+<p>
+    2D 에서 3D로 변환시 가장 중요한 속성은 원근감이다. <br>
+    원근감 : perspective (광각기능)<br> 
+</p>
+<p>
+    사용법 <br>
+    부모자의 원근값 수치 작성 단위 포함 perspective : 수치 px <br>
+</p>
+<p>
+    주의사항 <br>
+    수치가 작을수록 왜곡이 커지며 수치가 커질수록 왜곡이 적어진다.
+</p>
+
+<h2>예제</h2>
+<section class="box1">
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+</section>
+
+<section class="box2">
+    <article>
+        <p></p>
+        <p></p>
+    </article>
+</section>
+
+
+<section class="box3">
+    <article>
+        <p></p>
+        <p></p>
+    </article>
+</section>
+
+<style>
+
+/* 첫번째 */
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+section div {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+section div p {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: dodgerblue;
+    opacity: 0.5;
+    /* transform: rotateX(50deg); */
+    transform: rotateY(50deg);
+}
+section div:nth-child(1) {
+    perspective: 150PX;
+}
+section div:nth-child(2) {}
+
+section div:nth-child(3) {
+    perspective: 800PX;
+}
+
+
+/* 2번째 */
+
+.box2 article {
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000;
+    display: flex;
+    perspective: 1000px;
+}
+
+.box2 article p {
+    width: 400px;
+    height: 100%;
+    background-color: orange;
+    opacity: 0.8;
+    margin: 0;
+    transition: all 0.8s;
+}
+.box2 article p:nth-child(1){
+    transform-origin: left;
+}
+.box2 article p:nth-child(2){
+    transform-origin: right;
+}
+.box2 article:hover p:nth-child(1) {
+    transform: rotateY(60deg);
+}
+.box2 article:hover p:nth-child(2) {
+    transform: rotateY(-60deg);
+}
+
+
+.box3 article {
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000;
+    perspective: 600px;
+    background-color: deepskyblue;
+}
+
+.box3 article p {
+    width: 100%;
+    height: 300px;
+    background-color: dodgerblue;
+    margin: 0;
+    transition: all 1s;
+
+}
+.box3 article p:nth-child(1) {
+    transform-origin: top;
+}
+.box3 article p:nth-child(2) {
+    transform-origin: bottom;
+}
+
+.box3 article:hover p:nth-child(1) {
+    transform: rotateX(60deg);
+}
+.box3 article:hover p:nth-child(2) {
+    transform: rotateX(-60deg);
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+</body>
+</html>
