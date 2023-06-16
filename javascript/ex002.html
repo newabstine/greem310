@@ -70,18 +70,36 @@ body {
     $(document).ready(function(){
         // 오프셋 값을 활용하여 현재 섹션의 위치값 구하기
         let sec1 = $('.wrap section').eq(0).offset().top
+        let sec2 = $('.wrap section').eq(1).offset().top
+        let sec3 = $('.wrap section').eq(2).offset().top
+        let sec4 = $('.wrap section').eq(3).offset().top
+
         let sc = $(this).scrollTop()
         console.log(sc)
+
         $('.info span').eq(0).find('em').text(sec1);
         if(sc>=sec1-100){
         $('.wrap section').eq(0).css({'opacity':'1'})
         }
+        $('.info span').eq(1).find('em').text(sec2);
+        if(sc>=sec2-100){
+        $('.wrap section').eq(1).css({'opacity':'1'})
+        }
+        $('.info span').eq(2).find('em').text(sec3);
+        if(sc>=sec3-100){
+        $('.wrap section').eq(2).css({'opacity':'1'})
+        }
+        $('.info span').eq(3).find('em').text(sec4);
+        if(sc>=sec4-100){
+        $('.wrap section').eq(3).css({'opacity':'1'})
+        }
+
+
+
+
     })
 </script>
     
-
-
-
 </head>
 
 

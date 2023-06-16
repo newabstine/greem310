@@ -1,0 +1,131 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0;}
+a {text-decoration: none; color: #000;}
+ul,ol {list-style: none;}
+img {vertical-align: bottom;}
+
+/* 로고설정 */
+
+h1 {
+    position: fixed;
+    font-size: 50px;
+    left: 50px;
+    top: 50px;
+
+}
+
+/* 네비설정 */
+
+nav {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    margin-top: -120px;
+    z-index: 999;
+}
+nav ul {}
+nav li {
+    margin-bottom: 2px;
+}
+nav li a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    font-size: 14px;
+    border-bottom: 2px solid red;
+    transition: all 0.8s;
+}
+/* 
+transition: all 0.8s; 호버할때 
+자연스럽게 보이기위해 본체에게 트렌지션 설정
+*/
+
+/* justify-content: flex-end; = 글씨 오른쪽 정렬 */
+nav li a:hover {
+    border-color: #000;
+    color: red;
+}
+nav li.on a {
+    border-color: #000;
+    color: red;
+}
+/* section 설정 */
+#wrap {
+    position: relative;
+    z-index: 1;
+}
+section {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+section:nth-child(1) {
+    background-image: url(../img/bg1.jpg);
+}
+section:nth-child(2) {
+    background-image: url(../img/bg2.jpg);
+}
+section:nth-child(3) {
+    background-image: url(../img/bg3.jpg);
+}
+section:nth-child(4) {
+    background-image: url(../img/bg4.jpg);
+}
+
+/* background-size: cover; 화면에 빈 공간 없이 꽉 채운다 */
+/* background-size: contain; 화면에 이미지가 다 나올떄 , 로고에서 많이씀 */
+
+/* 섹션별 움직이는 이미지 */
+section img {position: absolute;}
+/* 첫번쨰 섹션  */
+.p11 {
+    bottom: 20px;
+    right: 20px;
+}
+.p12 {
+    bottom: 40px;
+    right: 130px;
+}
+.p13 {
+    top: 180px;
+    right: 60px;
+}
+
+.p21{
+    bottom: 20px;
+    right: 20px;
+}
+.p22{
+    bottom: 40px;
+    right: 130px;
+}
+
+.p31{
+    bottom: 20px;
+    right: 20px;
+}
+.p32{
+    bottom: 40px;
+    right: 130px;
+}
+.p33{
+    top: 180px;
+    right: 60px;
+}
+
+.p41{
+    bottom: 20px;
+    right: 20px;
+}
+.p42{
+    bottom: 40px;
+    right: 130px;
+}
