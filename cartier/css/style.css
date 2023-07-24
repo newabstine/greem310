@@ -13,9 +13,9 @@ img {vertical-align: bottom;}
     position: fixed;
     left: 0;
     top: 0;
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/6.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -23,8 +23,8 @@ img {vertical-align: bottom;}
 #wrap h1 {
     position: fixed;
     text-align: center;
-    left: 50px;
-    top: 240px;
+    left: 10px;
+    top: 10px;
     padding: 20px;
 }
 #wrap h1 strong {
@@ -102,7 +102,7 @@ article h2 {
 
 article video {
     position: absolute;
-    left: -100px;
+    left: -250px;
     top: 0;
     height: 100%;
     width: auto;
